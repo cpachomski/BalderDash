@@ -1,11 +1,15 @@
 import * as actionTypes from '../constants/actionTypes';
 
-function triggerIncrementDay() {
-	return { type: actionTypes.TEST }
+function triggerIncrementMonth(currentMonth) {
+	return { 
+		type: actionTypes.INCREMENT_MONTH,
+		currentMonth
+	}
 };
 
-export function incrementDay() {
+
+export function incrementMonth(currentMonth) {
 	return (dispatch) => {
-		dispatch(triggerIncrementDay());
+		dispatch(triggerIncrementMonth(currentMonth));
 	}
 };

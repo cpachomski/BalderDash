@@ -6,14 +6,25 @@ const initialState = {
 	day: new Date().getDate()
 };
 
-function incrementDay(state, action) {
-	return { ...state, day: state.day + 1}
+function incrementMonth(state, action) {
+	let { currentMonth } = action;
+	let newMonth;
+	let newYear;
+
+	if ( currentMonth === 11 ) {
+		newMonth = 0;
+		newYear = state.year + 1;
+	} else {
+		newMonth = currentMonth += 1;
+		newYear = state.year
+	}
+	return { ...state, month: newMonth, year: newYear}
 }
 
 export default function( state = initialState, action ) {
 	switch(action.type) {
-		case actionTypes.TEST:
-			return incrementDay(state);
+		case actionTypes.INCREMENT_MONTH:
+			return incrementMonth(state, action);
 
 	}
 	return state;

@@ -1,6 +1,6 @@
-import { incrementDay } from './calendar'
+import { incrementMonth } from './calendar'
 
 
 export {
-	incrementDay
+	incrementMonth
 };

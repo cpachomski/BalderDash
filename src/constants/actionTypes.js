@@ -1,1 +1,2 @@
-export const TEST = "TEST";
+export const INCREMENT_MONTH = 'INCREMENT_MONTH';
+export const DECREMENT_MONTH = 'DECREMENT_MONTH';
