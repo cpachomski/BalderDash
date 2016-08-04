@@ -1,0 +1,125 @@
+$arimo: 'Arimo', sans-serif;
+$Y: #FFB400;
+$W: #FFFBE0;
+$B: #2994B2;
+$G: #474744;
+
+
+body {
+	font-family: $arimo;
+}
+
+
+.left {
+	width: 50%;
+	background: #fff;
+}
+
+.right {
+	width: 50%;
+	background: #333;
+	padding: 15px;
+}
+
+#calendar {
+	background: #fff;
+	color: #333;
+	padding: 10px;
+	display: block;
+	max-width: 300px;
+	margin: 0px auto;
+	position: relative;
+
+	> controls {
+		position: absolute;
+		left: 0%;
+		width: calc(100% - 30px);
+		display: flex !important;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: flex-end;
+		top: 12px;
+		padding: 15px;
+		display: block;
+
+		span {
+			padding-right: 15px;
+			font-size: 20px;
+			&:hover {
+				cursor: pointer;
+				color: red;
+			}
+		}
+
+	}
+
+	.header {
+		.month {
+			padding: 6px 0px 0px 15px;
+			font-size: 35px;
+			text-transform: uppercase;
+			> span.year {
+				color: red;
+				font-size: 20px;
+				margin-left: 5px;
+			}
+			display: block;
+			text-align: left;
+		}
+	}
+
+	.weekdays {
+		margin: 25px 0px;
+		ul {
+			padding-left: 0px;
+			display: flex;
+			flex-direction: row;
+			li {
+				width: 14%;
+				display: inline-block;
+				flex-grow: 7;
+				text-align: center;
+			}
+		}
+	}
+
+	.week-container {
+		min-height: 150px;
+		> div {
+			display: flex;
+			flex-direction: row;
+			margin: 20px 5px;
+			> .day {
+				width: 14%;
+				text-align: center;
+				flex-grow: 7;
+				&:hover {
+					color: red;
+					cursor: pointer;
+				}
+				&.current-date {
+					color: red;
+					position: relative;
+					&:after {
+						position: absolute;
+						content: '';
+						width: 25px;
+						height: 1px;
+						bottom: -2px;
+						background: red;
+						left: 50%;
+						transform: translate(-50%);
+					}
+				}
+			}
+		}
+	}
+
+
+
+}
+
+
+
+
+

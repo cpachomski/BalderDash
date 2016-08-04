@@ -1,5 +1,6 @@
-import { Calendar } from 'calendar'
-import Constants from '../../constants/calendar'
+import { Calendar } from 'calendar';
+import Constants from '../../constants/calendar';
+import d3 from 'd3';
 
 
 export class Cal {
