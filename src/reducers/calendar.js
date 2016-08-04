@@ -8,7 +8,8 @@ const initialState = {
 	calYear: new Date().getFullYear()
 };
 
-function incrementMonth(state) {
+function incrementMonth(state, action) {
+	let { calMonth } = action;
 	let newMonth;
 	let newYear;
 
@@ -23,7 +24,7 @@ function incrementMonth(state) {
 }
 
 function decrementMonth(state, action) {
-	let { calMonth} = action;
+	let { calMonth } = action;
 	let newMonth;
 	let newYear;
 
@@ -41,9 +42,9 @@ function decrementMonth(state, action) {
 export default function( state = initialState, action ) {
 	switch(action.type) {
 		case actionTypes.INCREMENT_MONTH:
-			return incrementMonth(state);
+			return incrementMonth(state, action);
 		case actionTypes.DECREMENT_MONTH:
-			return decrementMonth(state);
+			return decrementMonth(state, action);
 
 	}
 

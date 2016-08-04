@@ -1,9 +1,15 @@
 import React from 'react';
-import calendar from 'calendar';
+import constants from '../../constants/calendar';
+import { Cal } from './Calendar';
 
 export default React.createClass({
 	displayName: 'Calendar',
 
+	getInitialState() {
+		return {
+			calendar: new Cal('calendar')
+		}
+	},
 
 	handleIncrementMonth() {
 		const { month, incrementMonth } = this.props;
@@ -16,16 +22,20 @@ export default React.createClass({
 	},
 
 	render() {
-		<div className='calendar'>
-				<h1> App.js</h1>
-				<h3>Month: {constants.monthNames[month]}</h3>
-				<h3>Year: {year}</h3>
+		const { day, calMonth, calYear } = this.props;
+		const calendar = new Calendar();
+		const weeks = calendar.monthDays(calYear, calMonth);
+
+		return (
+			<div id='calendar'>
+
 				<button 
 					onClick={ this.handleDecrementMonth }>
 					Prev Month</button>
 				<button 
 					onClick={ this.handleIncrementMonth }>
 					Next Month</button>
-		</div>
+			</div>
+		)
 	}
 });

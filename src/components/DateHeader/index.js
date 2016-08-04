@@ -3,7 +3,7 @@ import constants from '../../constants/calendar';
 export default React.createClass({
 	render() {
 		const { day, month, year } = this.props;
-		console.log(constants.dayNames);
+		
 		return (
 			<div className='date--header'>
 				<p className='date--day'> { constants.dayNames[day] } </p>
