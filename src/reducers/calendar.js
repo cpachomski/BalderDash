@@ -12,6 +12,7 @@ function incrementMonth(state, action) {
 	let { calMonth } = action;
 	let newMonth;
 	let newYear;
+	console.log(calMonth, ' COMING');
 
 	if ( calMonth === 11 ) {
 		newMonth = 0;
@@ -20,7 +21,7 @@ function incrementMonth(state, action) {
 		newMonth = state.calMonth += 1;
 		newYear = state.calYear;
 	}
-	return { ...state, calMonth: newMonth, year: newYear }
+	return { ...state, calMonth: newMonth, calYear: newYear }
 }
 
 function decrementMonth(state, action) {
@@ -28,7 +29,7 @@ function decrementMonth(state, action) {
 	let newMonth;
 	let newYear;
 
-	if ( currentMonth === 0 ) {
+	if ( calMonth === 0 ) {
 		newMonth = 11;
 		newYear = state.calYear - 1;
 	} else {

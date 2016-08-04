@@ -1,28 +1,28 @@
 import * as actionTypes from '../constants/actionTypes';
 
-function triggerIncrementMonth(currentMonth) {
+function triggerIncrementMonth(calMonth) {
 	return { 
 		type: actionTypes.INCREMENT_MONTH,
-		currentMonth
+		calMonth
 	}
 };
 
-function triggerDecrementMonth(currentMonth) {
+function triggerDecrementMonth(calMonth) {
 	return {
 		type: actionTypes.DECREMENT_MONTH,
-		currentMonth
+		calMonth
 	}
 }
 
 
-export function incrementMonth(currentMonth) {
+export function incrementMonth(calMonth) {
 	return (dispatch) => {
-		dispatch(triggerIncrementMonth(currentMonth));
+		dispatch(triggerIncrementMonth(calMonth));
 	}
 };
 
-export function decrementMonth(currentMonth) {
+export function decrementMonth(calMonth) {
 	return (dispatch) => {
-		dispatch(triggerDecrementMonth(currentMonth));
+		dispatch(triggerDecrementMonth(calMonth));
 	}
 }

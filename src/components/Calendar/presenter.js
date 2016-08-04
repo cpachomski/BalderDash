@@ -7,13 +7,13 @@ export default React.createClass({
 	displayName: 'Calendar',
 
 	handleIncrementMonth() {
-		const { month, incrementMonth } = this.props;
-		incrementMonth(month);
+		const { calMonth, incrementMonth } = this.props;
+		incrementMonth(calMonth);
 	},
 
 	handleDecrementMonth() {
-		const { month, decrementMonth } =  this.props;
-		decrementMonth(month);
+		const { calMonth, decrementMonth } =  this.props;
+		decrementMonth(calMonth);
 	},
 
 	componentDidMount() {
