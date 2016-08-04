@@ -1,24 +1,17 @@
 import React from 'react';
+import constants from '../../constants/calendar';
+import DateHeader from '../DateHeader';
 
 export default React.createClass({
 
-	handleIncrementMonth() {
-		const { month, incrementMonth } = this.props;
-		incrementMonth(month);
-	},
 
 	render() {
-		const { day, month, year } = this.props;
-
+		const { day, month, year, calMonth, calYear } = this.props;
 
 		return (
 			<div className='container'>
-				<h1> App.js</h1>
-				<h3>Month: {month}</h3>
-				<h3>Year: {year}</h3>
-				<button 
-					onClick={ this.handleIncrementMonth }>
-					Next Month</button>
+				<h1>BalderDash</h1>
+				<DateHeader day={day} month={month} year={year} />
 			</div>
 		)
 	}

@@ -7,9 +7,22 @@ function triggerIncrementMonth(currentMonth) {
 	}
 };
 
+function triggerDecrementMonth(currentMonth) {
+	return {
+		type: actionTypes.DECREMENT_MONTH,
+		currentMonth
+	}
+}
+
 
 export function incrementMonth(currentMonth) {
 	return (dispatch) => {
 		dispatch(triggerIncrementMonth(currentMonth));
 	}
 };
+
+export function decrementMonth(currentMonth) {
+	return (dispatch) => {
+		dispatch(triggerDecrementMonth(currentMonth));
+	}
+}

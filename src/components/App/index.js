@@ -5,7 +5,7 @@ import * as actions from '../../actions';
 import App from './presenter.js';
 
 function mapStateToProps(state) {
-	const { day, month, year } = state.calendar;
+	const { day, month, year} = state.calendar;
 
 	return {
 		day,
@@ -14,10 +14,4 @@ function mapStateToProps(state) {
 	}
 };
 
-function mapDispathToProps(dispatch) {
-	return {
-		incrementMonth: bindActionCreators(actions.incrementMonth, dispatch)
-	}
-}
-
-export default connect(mapStateToProps, mapDispathToProps)(App);
+export default connect(mapStateToProps)(App);
