@@ -2,7 +2,7 @@ import React from 'react';
 import constants from '../../constants/calendar';
 import DateHeader from '../DateHeader';
 import Calendar from '../Calendar';
-import Todos from '../Todos';
+import Tasks from '../Tasks';
 import './style.scss';
 
 export default React.createClass({
@@ -15,7 +15,7 @@ export default React.createClass({
 			<div className='container'>
 				<DateHeader day={day} month={month} year={year} />
 				<div className='inner--container'>
-					<Todos />
+					<Tasks />
 					<Calendar />
 				</div>
 			</div>

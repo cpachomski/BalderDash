@@ -19,14 +19,24 @@ export default React.createClass({
 
 	},
 
+	handleSubmit(e) {
+		e.preventDefault();
+
+		const task = this.refs.newTask.value;
+		const { addNewTask } = this.props;
+		addNewTask(task);
+	},
+
 	render() {
 		const { visible } = this.props;
 		const randomPlaceholder = this.generateRandomPlaceholder();
 		const toggleClass = visible ? 'new-task--form visible' : 'new-task--form' 
 
 		return (
-			<form className={toggleClass}>
+			<form className={toggleClass}
+				  onSubmit={this.handleSubmit}>
 				<input type='text'
+						ref='newTask'
 						placeholder={randomPlaceholder}
 						></input>
 				<input type='submit'

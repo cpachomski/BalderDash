@@ -10,8 +10,7 @@ function mapStateToProps(state) {
 
 function mapDispathToProps(dispatch) {
 	return {
-		// incrementMonth: bindActionCreators(actions.incrementMonth, dispatch),
-		// decrementMonth: bindActionCreators(actions.decrementMonth, dispatch)
+		addNewTask: bindActionCreators(actions.addNewTask, dispatch)
 	}
 }
 

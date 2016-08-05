@@ -2,10 +2,10 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-import Todos from './presenter.js';
+import Tasks from './presenter.js';
 
 function mapStateToProps(state) {
-	const {} = state.todos;
+	const {} = state.Tasks;
 	return {
 	}
 };
@@ -17,4 +17,4 @@ function mapDispathToProps(dispatch) {
 	}
 }
 
-export default connect(mapStateToProps, mapDispathToProps)(Todos);
+export default connect(mapStateToProps, mapDispathToProps)(Tasks);

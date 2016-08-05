@@ -15,7 +15,7 @@ $sand: #DFD1BE;
 	transition: all 0.2s ease-out;
 	transform: translateY(-150%);
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 
 	input {
 		background: #333;
