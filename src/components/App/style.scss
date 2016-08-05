@@ -1,0 +1,10 @@
+.container {
+	max-width: 1000px;
+	margin: 25px auto;
+	border: 5px solid #333;
+}
+
+.inner--container {
+	display: flex;
+	justify-content: space-between;
+}

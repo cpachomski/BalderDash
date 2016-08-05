@@ -1,0 +1,49 @@
+$arimo: 'Arimo', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+$anton: 'Anton', sans-serif;
+$archivo: 'Archivo Black', sans-serif;
+$Y: #FFB400;
+$W: #FFFBE0;
+$B: #2994B2;
+$G: #474744;
+$sand: #DFD1BE;
+
+
+.date--header {
+	color: $sand;
+	border-bottom: 5px solid #333;
+
+	.date--box {
+		background: #333;
+		display: inline-block;
+		width: 100px;
+		height: 87px;
+		text-align: center;
+		padding-bottom: 5px;
+
+		.date--date {
+			font-size: 40px;
+		}
+
+		.date--day {
+			font-size: 14px;
+		}
+
+		.date--month {
+			text-transform: uppercase;
+		}
+	
+	}
+
+	.date--day {
+		display: inline-block;		
+		color: #333;
+		vertical-align: top;
+		font-size: 80px;
+		margin-bottom: 0px;
+	}
+
+	p {
+		margin: 0px;
+	}
+}

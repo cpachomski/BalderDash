@@ -1,34 +1,26 @@
 $arimo: 'Arimo', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+$anton: 'Anton', sans-serif;
+$archivo: 'Archivo Black', sans-serif;
 $Y: #FFB400;
 $W: #FFFBE0;
 $B: #2994B2;
 $G: #474744;
+$sand: #DFD1BE;
 
 
 body {
 	font-family: $arimo;
-}
-
-
-.left {
-	width: 50%;
-	background: #fff;
-}
-
-.right {
-	width: 50%;
-	background: #333;
-	padding: 15px;
+	background: $sand;
 }
 
 #calendar {
-	background: #fff;
-	color: #333;
 	padding: 10px;
 	display: block;
-	max-width: 300px;
-	margin: 0px auto;
 	position: relative;
+	background: #333;
+	color: $sand;
+	width: 300px;
 
 	> controls {
 		position: absolute;
@@ -47,10 +39,19 @@ body {
 			font-size: 20px;
 			&:hover {
 				cursor: pointer;
-				color: red;
 			}
 		}
 
+	}
+
+	button {
+		background: transparent;
+		box-shadow: none;
+		border: 0px;
+
+		> i {
+			color: $sand;
+		}
 	}
 
 	.header {
@@ -59,7 +60,6 @@ body {
 			font-size: 35px;
 			text-transform: uppercase;
 			> span.year {
-				color: red;
 				font-size: 20px;
 				margin-left: 5px;
 			}
@@ -93,12 +93,7 @@ body {
 				width: 14%;
 				text-align: center;
 				flex-grow: 7;
-				&:hover {
-					color: red;
-					cursor: pointer;
-				}
 				&.current-date {
-					color: red;
 					position: relative;
 					&:after {
 						position: absolute;
@@ -106,7 +101,7 @@ body {
 						width: 25px;
 						height: 1px;
 						bottom: -2px;
-						background: red;
+						background: $sand;
 						left: 50%;
 						transform: translate(-50%);
 					}

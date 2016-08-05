@@ -25,15 +25,16 @@ export default React.createClass({
 
 		return (
 			<div id='calendar'>
-
 				<button 
 					id='prev-month'
 					onClick={ this.handleDecrementMonth }>
-					Prev Month</button>
+					<i className='material-icons'>navigate_before</i>
+				</button>
 				<button 
 					id='next-month'
 					onClick={ this.handleIncrementMonth }>
-					Next Month</button>
+					<i className='material-icons'>navigate_next</i>	
+				</button>
 			</div>
 		)
 	}
