@@ -1,3 +1,32 @@
+$arimo: 'Arimo', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+$anton: 'Anton', sans-serif;
+$archivo: 'Archivo Black', sans-serif;
+$Y: #FFB400;
+$W: #FFFBE0;
+$B: #2994B2;
+$G: #474744;
+$sand: #DFD1BE;
+
+
 .todos {
-	width: 50%;
+	width: 100%;
+
+	.todos--header {
+		position: relative;
+		i {
+			position: absolute;
+			top: 12px;
+			right: 15px;
+			
+			&:hover {
+				cursor: pointer;
+			}
+
+			&.light {
+				color: $sand;
+			}
+
+		}
+	}
 }

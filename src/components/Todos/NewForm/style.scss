@@ -1,0 +1,36 @@
+$arimo: 'Arimo', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+$anton: 'Anton', sans-serif;
+$archivo: 'Archivo Black', sans-serif;
+$Y: #FFB400;
+$W: #FFFBE0;
+$B: #2994B2;
+$G: #474744;
+$sand: #DFD1BE;
+
+
+.new-task--form {
+	background: #333;
+	width: 100%;
+	transition: all 0.2s ease-out;
+	transform: translateY(-150%);
+	position: relative;
+	z-index: -1;
+
+	input {
+		background: #333;
+		border: none;
+		color: $sand;
+		font-size: 20px;
+		height: 50px;
+
+
+		&::-webkit-input-placeholder {
+			color: $sand;
+		}
+	}
+
+	&.visible{
+		transform: translateY(0%);
+	}
+}

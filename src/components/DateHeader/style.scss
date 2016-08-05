@@ -12,6 +12,9 @@ $sand: #DFD1BE;
 .date--header {
 	color: $sand;
 	border-bottom: 5px solid #333;
+	z-index: 10;
+	position: relative;
+	background-color: $sand;
 
 	.date--box {
 		background: #333;
