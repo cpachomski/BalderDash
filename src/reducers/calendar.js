@@ -12,7 +12,6 @@ function incrementMonth(state, action) {
 	let { calMonth } = action;
 	let newMonth;
 	let newYear;
-	console.log(calMonth, ' COMING');
 
 	if ( calMonth === 11 ) {
 		newMonth = 0;
