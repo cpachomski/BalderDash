@@ -21,10 +21,15 @@ export default React.createClass({
 
 	handleSubmit(e) {
 		e.preventDefault();
-
-		const task = this.refs.newTask.value;
 		const { addNewTask } = this.props;
+		const task = this.refs.newTask.value;
+
+		if (task.split('').length === 0 ) {
+			return alert("You can't do nothing");
+		}
+
 		addNewTask(task);
+		this.refs.newTask.value = '';
 	},
 
 	render() {
@@ -37,7 +42,6 @@ export default React.createClass({
 				  onSubmit={this.handleSubmit}>
 				<input type='text'
 						ref='newTask'
-						placeholder={randomPlaceholder}
 						></input>
 				<input type='submit'
 						value='Add'></input>

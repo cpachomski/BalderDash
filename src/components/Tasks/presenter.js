@@ -18,6 +18,7 @@ export default React.createClass({
 		})
 	},
 
+
 	render() {
 		const { tasks } = this.props;
 		const iconClass = this.state.newFormVisible ? 'material-icons light' : 'material-icons';
@@ -31,6 +32,13 @@ export default React.createClass({
 					<i className={iconClass}
 						onClick={this.toggleFormVisibility}>{iconText}</i>
 				</div>
+				<ul className='tasks--list'>
+				{
+					tasks.map((task, i )=> {
+						return <Task key={i} description={task} /> 
+					})
+				}
+				</ul>
 			</div>
 		)
 	}
