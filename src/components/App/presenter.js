@@ -3,6 +3,7 @@ import constants from '../../constants/calendar';
 import DateHeader from '../DateHeader';
 import Calendar from '../Calendar';
 import Todos from '../Todos';
+import Forecast from '../Forecast';
 import './style.scss';
 
 export default React.createClass({
@@ -13,7 +14,10 @@ export default React.createClass({
 
 		return (
 			<div className='container'>
-				<DateHeader day={day} month={month} year={year} />
+				<div className='top-bar'>
+					<DateHeader day={day} month={month} year={year} />
+					<Forecast />
+				</div>
 				<div className='inner--container'>
 					<Todos />
 					<Calendar />
