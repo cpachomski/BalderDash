@@ -9,17 +9,20 @@ $G: #474744;
 $sand: #DFD1BE;
 
 
-.todos {
+.tasks {
 	width: 100%;
 
-	.todos--header {
+	.tasks--header {
 		position: relative;
 		i {
 			position: absolute;
 			top: 12px;
 			right: 15px;
 			z-index: 10;
-			
+			 -webkit-user-select: none;  /* Chrome all / Safari all */
+			  -moz-user-select: none;     /* Firefox all */
+			  -ms-user-select: none;      /* IE 10+ */
+			  user-select: none;    
 			&:hover {
 				cursor: pointer;
 			}
@@ -28,6 +31,11 @@ $sand: #DFD1BE;
 				color: $sand;
 			}
 
+		}
+
+		.tasks--title {
+			margin-top: 0px;
+			color: #333;
 		}
 	}
 }

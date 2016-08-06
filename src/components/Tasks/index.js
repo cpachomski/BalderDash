@@ -1,35 +1,18 @@
 import React from 'react';
-import NewForm from './NewForm';
-import './style.scss';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
+import Tasks from './presenter';
 
-export default React.createClass({
-	displayName: 'Todos',
+function mapStateToProps(state) {
+	const { tasks } = state.tasks;
+	return { tasks } 
+};
 
-	getInitialState() {
-		return {
-			newFormVisible: false
-		}
-	},
-
-	toggleFormVisibility() {
-		this.setState({
-			newFormVisible: !this.state.newFormVisible
-		})
-	},
-
-	render() {
-		const iconClass = this.state.newFormVisible ? 'material-icons light' : 'material-icons';
-		const iconText = this.state.newFormVisible ? 'clear' : 'add';
-
-		return (
-			<div className='todos'>
-				<div className='todos--header'>
-					<NewForm visible={this.state.newFormVisible}/>			
-					<i className={iconClass}
-						onClick={this.toggleFormVisibility}>{iconText}</i>
-					
-				</div>
-			</div>
-		)
+function mapDispathToProps(dispatch) {
+	return {
 	}
-});
+}
+
+export default connect(mapStateToProps, mapDispathToProps)(Tasks);
+
