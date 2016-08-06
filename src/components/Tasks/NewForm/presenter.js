@@ -41,6 +41,7 @@ export default React.createClass({
 			<form className={toggleClass}
 				  onSubmit={this.handleSubmit}>
 				<input type='text'
+						id='new-task'
 						ref='newTask'
 						></input>
 				<input type='submit'

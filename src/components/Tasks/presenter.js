@@ -13,6 +13,11 @@ export default React.createClass({
 	},
 
 	toggleFormVisibility() {
+		if (this.state.newFormVisible === false) {
+			let input = document.getElementById('new-task');
+			console.log(input);
+			input.focus();
+		}
 		this.setState({
 			newFormVisible: !this.state.newFormVisible
 		})
