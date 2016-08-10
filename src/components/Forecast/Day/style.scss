@@ -1,0 +1,15 @@
+.forecast--day {
+	padding: 5px;
+	box-sizing: border-box;
+	
+	.temp,
+	.humidity {
+		font-size: 14px;
+		text-align: right;
+
+		> small {
+			font-size: 8px;
+		}
+	}
+
+}

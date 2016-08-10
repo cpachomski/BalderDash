@@ -1,0 +1,15 @@
+.forecast--container {
+	ul {
+		display: flex;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			height: 100%;
+			min-width: 102px;
+			border-left: 5px solid #333;
+			list-style: none;
+		}
+	}
+}
