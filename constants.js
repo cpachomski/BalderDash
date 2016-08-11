@@ -1,26 +1,26 @@
 digits = [
-	'One',
-	'Two',
-	'Three',
-	'Four',
-	'Five',
-	'Six',
-	'Seven',
-	'Eight',
-	'Nine',
-	'Ten'
+	'one',
+	'two',
+	'three',
+	'four',
+	'five',
+	'six',
+	'seven',
+	'eight',
+	'nine',
+	'ten'
 ];
 
 teens = [
- 	'Eleven',
- 	'Twelve',
- 	'Thirteen',
- 	'Fourteen',
- 	'Fifteen',
- 	'Sixteen',
- 	'Seventeen',
- 	'Eighteen',
- 	'Nineteen'
+ 	'eleven',
+ 	'twelve',
+ 	'thirteen',
+ 	'fourteen',
+ 	'fifteen',
+ 	'sixteen',
+ 	'seventeen',
+ 	'eighteen',
+ 	'nineteen'
 ];
 
 tens = [
