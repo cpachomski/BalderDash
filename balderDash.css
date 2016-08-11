@@ -1,7 +1,10 @@
-#name-input {
-	display: none;
+body {
+	background: #333;
+	color: #FFF;
 }
 
-#dashboard {
-	display: block;
+.container {
+	max-width: 768px;
+	margin: 50px auto;
+	font-size: 5vw;
 }
