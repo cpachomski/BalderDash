@@ -24,8 +24,11 @@
 
 		//convert minutes to words
 		switch (true) {
+			case m === 0: 
+				wm = ''
+				break;
 			case m < 10:
-				wm = "O' " + digits[m-1];
+				wm = "o' " + digits[m-1];
 				break;
 			case m < 20:
 				var lastDigit = m.toString().split('')[1];
