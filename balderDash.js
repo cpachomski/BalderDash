@@ -9,7 +9,7 @@
 
 	function setTime() {
 		var currentTime = new Date();
-		var mer = 'pm'
+		var mer = 'am'
 		var h = currentTime.getHours();
 		var m = currentTime.getMinutes();
 		var wh, wm;
@@ -18,7 +18,7 @@
 		//update am/pm
 		if (h > 12) {
 			h -= 12;
-			mer = 'am';
+			mer = 'pm';
 			wh = digits[h-1];
 		};
 
