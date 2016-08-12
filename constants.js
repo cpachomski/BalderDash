@@ -1,5 +1,5 @@
 digits = [
-	'twelve',
+	'twelfth',
 	'one',
 	'two',
 	'three',

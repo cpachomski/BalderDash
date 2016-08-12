@@ -55,12 +55,11 @@
 		var currentDate = new Date();
 		var d = currentDate.getDay();
 		var m = currentDate.getMonth();
-		var y = currentDate.getFullYear();
-		console.log(y);
+		var y = parseInt(currentDate.getFullYear().toString().substring(2));
 		var date = (currentDate.getDate()) + 1;
 		var wd = days[d];
 		var wm = months[m];
-		var wdate;
+		var wdate, wy;
 
 
 
@@ -89,11 +88,21 @@
 		};
 
 		//convert year into words
+		var milleniumCentury = 'two thousand and ';
+		//find the last two digits of the year
 		switch (true) {
-			
+			case y < 20:
+				wy = milleniumCentury + teens[y-11]
+				break;
+			case y < 30:
+
+				break;
+			case y < 40:
+
+				break;
 		}
 
-
+		document.getElementById('date--year').innerHTML = wy;
 		document.getElementById('date--weekday').innerHTML = wd;
 		document.getElementById('date--month').innerHTML = wm;
 		document.getElementById('date--date').innerHTML = wdate;
