@@ -1,9 +1,9 @@
 { 
 	"manifest_version": 2,
-	"name": "BalderDash",
+	"name": "Verbose",
 	"description": "This extension overrides the default chrome newtab and displays relevant data to my day",
 	"version": "0.1",
 	"chrome_url_overrides": {
-		"newtab": "BalderDash.html"
+		"newtab": "verbose.html"
 	}
 }
