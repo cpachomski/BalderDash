@@ -13,9 +13,10 @@
 		var currentTime = new Date();
 		var mer = 'am';
 		var h = currentTime.getHours();
-			var m = currentTime.getMinutes();
+		var m = currentTime.getMinutes();
 		var wh = digits[h];
 		var wm;
+
 
 		//convert to 12 hour time and then into words
 		//update am/pm
