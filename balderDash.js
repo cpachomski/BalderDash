@@ -19,7 +19,7 @@
 
 		//convert to 12 hour time and then into words
 		//update am/pm
-		if (h > 12) {
+		if (h >= 12) {
 			h -= 12;
 			mer = 'pm';
 			wh = digits[h];
