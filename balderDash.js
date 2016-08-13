@@ -13,7 +13,7 @@
 		var currentTime = new Date();
 		var mer = 'am';
 		var h = currentTime.getHours();
-		var m = currentTime.getMinutes();
+			var m = currentTime.getMinutes();
 		var wh = digits[h];
 		var wm;
 

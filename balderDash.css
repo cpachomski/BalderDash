@@ -4,11 +4,13 @@ body {
 }
 
 .container {
-	font-size: 4vw;
+	font-size: 5vw;
 	margin: 50px auto;
 	max-width: 768px;
-	text-align: justify;
+}
 
+.container p {
+	text-align: justify;
 }
 
 .container span {

@@ -1,5 +1,5 @@
 digits = [
-	'twelfth',
+	'',
 	'one',
 	'two',
 	'three',
@@ -9,7 +9,8 @@ digits = [
 	'seven',
 	'eight',
 	'nine',
-	'ten'
+	'ten',
+	'eleven'
 ];
 
 digitsth = [
