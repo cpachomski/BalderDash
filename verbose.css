@@ -4,15 +4,15 @@ body {
 }
 
 .container {
-	font-size: 5vw;
-	margin: 50px auto;
-	max-width: 768px;
-}
-
-.container p {
-	text-align: justify;
+	position: fixed;
+	top: 35%;
+	width: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4.5vw;
 }
 
 .container span {
 	color: #fff;
+	display: inline-block;
 }
