@@ -57,7 +57,7 @@
 		var d = currentDate.getDay();
 		var m = currentDate.getMonth();
 		var y = parseInt(currentDate.getFullYear().toString().substring(2));
-		var date = (currentDate.getDate()) + 1;
+		var date = (currentDate.getDate());
 		var wd = days[d];
 		var wm = months[m];
 		var wdate, wy;
@@ -67,10 +67,10 @@
 		//convert date day into words
 		switch (true) {
 			case date < 10:
-				wdate = digitsth[date]
+				wdate = digitsth[date - 1]
 				break;
 			case date < 20:
-				var lastDigit = date - 10;
+				var lastDigit = date - 9;
 				wdate = ths[lastDigit-1];
 				break;
 			case date < 30:
