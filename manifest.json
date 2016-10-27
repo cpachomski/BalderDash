@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Verbose",
 	"description": "This extension overrides the default chrome newtab and displays relevant data to my day",
-	"version": "0.1",
+	"version": "0.2",
 	"chrome_url_overrides": {
 		"newtab": "verbose.html"
 	}
